@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>cybzone.in</title>
+  <link rel="icon" href="image/cybzone.in logo 1.jpeg" type =""> 
+  <link rel="stylesheet" href="css/style.css">
+  <!--/form-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--/form-->
+</head>
+
+<body>
+  <!-- simple-contact-form2 -->
+
+<div style="background-color: #00d4c0;" class="topnav" id="myTopnav">
+  <a style="color: #ffffff;" href="#home" class="active">Home</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div class="ecom-contenthny py-5" style="padding-top: 2rem !important;" >
+  <div class="container py-lg-5">
+    <h3 style=" margin-top: 20px; font-size:  40px;line-height: 50px;text-transform: uppercase;font-family: 'Oswald', sans-serif;color: #212529;" class="hny-title mb-0 text-center">cyb<span style="    color: #ff7315;" >z</span>one</h3>
+    <p style="color: #6b778d;font-size: 15px;" class="text-center">Handpicked products just for you</p>
+  <section style="background-color: #ffffff " class="w3l-simple-contact-form2">
+    <div class="section-gap">
+      <div class="wrapper">
+        <div class="form-inner-cont">
+          <form id="submit-form" action=""  class="signin-form">
+            <h3></h3>
+            <div class="form-input">
+              <label for="Name">Name </label>
+              <input type="text" name="Name 41 PUMA T-Shirt ₹370" id="Name" placeholder="Enter your name" required="" />
+            </div>
+            <div class="form-input">
+              <label for="quantity">Quantity (between 1 and 10)</label>
+              <input type="number" id="quantity" name="quantity" placeholder="Enter Quantity" min="1" max="10">
+            </div>
+            <div class="form-input">
+              <label for="Email">Email</label>
+              <input type="email" name="Email" id="Email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-input">
+              <label for="Number">Phone Number</label>
+              <input type="Number" name="Number" id="Number" placeholder="Enter your Number" required />
+            </div>
+            <div class="form-input">
+              <label for="Zip code">Zip code</label>
+              <input type="Number" name="Zip code" id="Number" placeholder="Enter Zip code" required />
+            </div>
+            <div class="form-input">
+              <label for="Address">Address</label>
+              <textarea name="Address" id="Address" placeholder="Enter Address" required=""></textarea>
+            </div>
+            <button class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbzi16dzakQI5GdZWBA0HB2EbnFXsYtc5ilcmdLe/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Order successfully")
+                window.location.reload()
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
+   
+<!-- footer -->
+<footer class="py-lg-4 py-md-3 py-sm-3 py-3 text-center">
+   <div style=" background-color: rgb(255, 255, 255);" class="copy-agile-right">
+      <p style="color: #000000;" >© 2021 cybzone. All rights reserved. Design by <a href="" target="_blank" style="color: #000000;" >cybzoneofficial</a>
+      </p>
+   </div>
+</footer>
+<!-- //footer -->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+  <!-- /simple-contact-form2 -->
+</body>
+
+</html>
