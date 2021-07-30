@@ -5402,7 +5402,7 @@ input#amount1 {
 }
 
 .w3l-grids-hny-2 .boxhny13 img {
-  width: 99%;
+  width: 79%;
   height: auto;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -8220,6 +8220,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  justify-content: center;
 }
 
 .no-gutters {
@@ -16238,7 +16239,7 @@ button.bg-dark:focus {
 
 .pb-5,
 .py-5 {
-  padding-bottom: 3rem !important;
+  padding-bottom: 0rem !important;
 }
 
 .pl-5,
