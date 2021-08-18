@@ -1,9 +1,3 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
 
 html,
 body {
@@ -446,7 +440,7 @@ h3.tittle-w3l {
 }
 
 h3.tittle-w3l span {
-    color: #0879c9;
+    color: #ff7315;
     font-size: 50px;
     letter-spacing: 0;
 }
